@@ -5,6 +5,7 @@ class Rope{
       var options={
           bodyA:body1,
           bodyB:body2,
+          length: 400,
           pointB:{x:this.offsetX,y:this.offsetY}
       }
       this.rope=Matter.Constraint.create(options)
@@ -13,6 +14,6 @@ class Rope{
     display(){
         strokeWeight(4);
         stroke("black");
-        line(this.chain.bodyA.position.x,this.chain.bodyA.position.y,this.chain.bodyB.position.x,this.chain.bodyB.position.y);
+        line(this.rope.bodyA.position.x,this.rope.bodyA.position.y,this.rope.bodyB.position.x,this.rope.bodyB.position.y);
     }
 }

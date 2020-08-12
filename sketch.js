@@ -34,7 +34,7 @@ function draw() {
 Engine.update(engine);
   roof.display();
   ball1.display();
-  
+  rope.display();
   rectMode(CENTER);
   
   drawSprites();
